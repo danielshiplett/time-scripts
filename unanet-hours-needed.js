@@ -1,11 +1,14 @@
 // ==UserScript==
-// @name         Calculate Hours Needed
+// @name         Unanet - Calculate Hours Needed
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  Calculate the number of hours needed for the rest of the month.
 // @author       ddshipl
+// @namespace    https://github.com/danielshiplett
 // @match        https://*.unanet.biz/*/action/time/edit*
 // @grant        none
+// @updateURL    https://raw.githubusercontent.com/danielshiplett/time-scripts/master/unanet-hours-needed.js
+// @downloadURL  https://raw.githubusercontent.com/danielshiplett/time-scripts/master/unanet-hours-needed.js
 // ==/UserScript==
 
 (function() {

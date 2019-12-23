@@ -7,9 +7,20 @@
 // @namespace    https://github.com/danielshiplett
 // @match        https://*.unanet.biz/*/action/time/edit*
 // @grant        none
+// @run-at       document-idle
 // @updateURL    https://raw.githubusercontent.com/danielshiplett/time-scripts/master/unanet-hours-needed.js
 // @downloadURL  https://raw.githubusercontent.com/danielshiplett/time-scripts/master/unanet-hours-needed.js
 // ==/UserScript==
+
+/* As soon as the Calculate button is available, let's click it! */
+(function init() {
+    var button = document.getElementById('calculate');
+    if (button) {
+        button.click();
+    } else {
+        setTimeout(init, 0);
+    }
+})();
 
 (function() {
     'use strict';
